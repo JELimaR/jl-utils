@@ -1,7 +1,11 @@
 #!/usr/bin/env node
 
-import * as Tree from './Tree';
+import Tree, { ITreeIds, ITreeRoots } from './Tree';
 import CollectionsUtilsFunctions from './CollectionsUtilsFunctions';
+
+export {
+	ITreeIds, ITreeRoots
+}
 
 export {
 	Tree,

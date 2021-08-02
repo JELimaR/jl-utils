@@ -13,7 +13,7 @@ export interface ITreeRoots<T> {
 
 export interface ITreeIds<I> {
 	root: I,
-	children: ITreeRoots<I>[];
+	children: ITreeIds<I>[];
 }
 
 export default class Tree<T extends INodeWithID> {
