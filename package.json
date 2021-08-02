@@ -6,7 +6,6 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "publish": "npm run build && npm publish",
     "clean": "node ./scripts/clean.js",
     "dev:tsc": "tsc --watch",
     "dev:nodemon": "nodemon ./dist/index.js ",
