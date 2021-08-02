@@ -1,5 +1,5 @@
 
-import Tree from '../src/Tree'
+import Tree from '../Tree'
 
 class TNumber {
 	id: number;
@@ -73,7 +73,7 @@ test('get father, fatherTree and ancients', () => {
 	expect( t.fatherTree ).toBeUndefined();
 	expect( t.ancients.length ).toEqual(0);
 	let t2 = t.addChild( tn.t2 );
-	let t3 = t2.addChild( tn.t3 );
+	t2.addChild( tn.t3 );
 	expect( t2.fatherTree ).toEqual( t )
 	expect( t2.ancients ).toContain( tn.t1 )
 	let t4 = t2.addChild( tn.t4 );
@@ -95,9 +95,9 @@ test('brothers', () => {
 	expect( t3.brothers ).toContain( tn.t2 )
 	expect( t3.brothers ).not.toContain( tn.t3 )
 	let t4 = t2.addChild( tn.t4 );
-	let t5 = t2.addChild( tn.t5 );
-	let t6 = t2.addChild( tn.t6 );
-	let t7 = t2.addChild( tn.t7 );
+	t2.addChild( tn.t5 );
+	t2.addChild( tn.t6 );
+	t2.addChild( tn.t7 );
 
 	expect( t4.brothers.length ).toEqual(3)
 
