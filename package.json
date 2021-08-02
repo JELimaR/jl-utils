@@ -6,6 +6,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
+    "publish": "npm run build && npm publish",
     "clean": "node ./scripts/clean.js",
     "dev:tsc": "tsc --watch",
     "dev:nodemon": "nodemon ./dist/index.js ",
@@ -23,18 +24,5 @@
     "nodemon": "^2.0.12",
     "ts-jest": "^27.0.4",
     "typescript": "^4.3.5"
-  },
-  "jest": {
-    "verbose": true,
-    "preset": "ts-jest",
-    "testEnvironment": "node",
-    "collectCoverage": true,
-    "coveragePathIgnorePatterns": [
-      "/node_modules/",
-      "/dist/"
-    ]
-  },
-  "dependencies": {
-    "update": "^0.7.4"
   }
 }
