@@ -1,7 +1,4 @@
 .vscode/*
 dist/*
 node_modules/*
-data/*
 
-*.langjson
-*.famjson
