@@ -1,4 +1,4 @@
-import CollectionsUtilsFunctions from '../CollectionsUtilsFunctions'
+import CollectionsUtilsFunctions from '../Utils/CollectionsUtilsFunctions'
 let cuf = CollectionsUtilsFunctions.getInstance()
 
 class TNumber {

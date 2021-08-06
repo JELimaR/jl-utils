@@ -11,9 +11,9 @@ export interface ITreeRoots<T> {
 	children: ITreeRoots<T>[];
 }
 
-export interface ITreeIds<I> {
+export interface ITreeIds {
 	root: I,
-	children: ITreeIds<I>[];
+	children: ITreeIds[];
 }
 
 export default class Tree<T extends INodeWithID> {
@@ -64,8 +64,8 @@ export default class Tree<T extends INodeWithID> {
 		return out;
 	}
 
-	getTreeIds(): ITreeIds<I> {
-		let a: ITreeIds<I>[] = [];
+	getTreeIds(): ITreeIds {
+		let a: ITreeIds[] = [];
 		this._children.forEach( (e: Tree<T>) => {
 			a.push( e.getTreeIds() )
 		} )
@@ -129,4 +129,5 @@ export default class Tree<T extends INodeWithID> {
 			v.forEach( callback )
 		} )
 	}
+
 }

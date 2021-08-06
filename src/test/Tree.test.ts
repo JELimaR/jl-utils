@@ -1,5 +1,5 @@
 
-import Tree from '../Tree'
+import Tree from '../Utils/Tree'
 
 class TNumber {
 	id: number;

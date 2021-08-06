@@ -6,3 +6,5 @@ scripts/*
 .eslintrc.json
 .gitignore
 tsconfig.json
+
+*/test/*
